@@ -1,38 +1,177 @@
-.App {
-  text-align: center;
+input,
+select,
+span,
+textarea {
+  font-family: Neutrif, Montserrat, sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.app-container {
+  width: 1000px;
+  background-color: #fff;
+  display: flex;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.main-content {
+  width: 70%;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.sidebar-container {
+  background-color: #4160f4;
+  padding: 0.2rem 1.2rem;
+  width: 30%;
+  height: 100%;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
+
+.sidebar-inner-container {
+  padding: 2rem;
+}
+
+.sidebar-search-field {
+  width: 100%;
+  border-radius: 25px;
+  background-color: #3752d5;
+  border: none;
+  padding: 0.5rem 1rem;
+  font-size: 0.8rem;
+  color: #fff;
+}
+
+.sidebar-search-field::placeholder {
+  color: #fff;
+}
+
+.sidebar-contacts {
+  padding-top: 2rem;
+}
+
+.contact-card-container {
+  display: flex;
+  align-items: center;
+  padding: 0 0.3rem;
+  margin: 1rem 0;
+  color: #fff;
+  width: 100%;
+}
+
+.contact-card-inner-container {
+  width: 100%;
+}
+
+.contact-card-image {
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  margin-right: 0.5rem;
+}
+
+.contact-card-header {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.5rem;
+}
+
+.contact-card-message {
+  font-size: 0.5rem;
+  margin-top: 0.2rem;
+}
+
+.chat-header {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.8rem;
+  align-items: center;
+  border-bottom: 1px solid #f1f1f1;
+  font-size: small;
+}
+.header-text {
+  font-size: 1rem;
+  font-weight: normal;
+}
+
+.header-button {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #e1dbdb;
+  margin: 0 0.5rem;
+  border: none;
+}
+
+.header-button img {
+  width: 12.5px;
+  height: 12.5px;
+}
+
+.main-content-container {
   display: flex;
   flex-direction: column;
+  padding: 2rem;
+  position: relative;
+  height: calc(100% - 80px);
+}
+
+.chat-contact-message {
+  display: flex;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin-right: auto;
+  margin: 1rem 0;
 }
 
-.App-link {
-  color: #61dafb;
+.chat-contact-image {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  margin-right: 0.5rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.chat-contact-message-box,
+.chat-user-message-box {
+  background-color: #30bf92;
+  border-radius: 3px;
+  max-width: 300px;
+  font-size: 0.8rem;
+  font-weight: normal;
+  color: #fff;
+  padding: 0.5rem;
+}
+
+.chat-user-message-box {
+  background-color: #f1f1f1;
+  color: #1d1d1d;
+  margin-left: auto;
+}
+
+.chat-input-container {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 45px;
+  border-top: 1px solid #f1f1f1;
+}
+
+.chat-input-message {
+  padding: 0.5rem;
+  width: 85%;
+  border: none;
+}
+
+.chat-input-button {
+  width: 15%;
+  background-color: #4160f4;
+  color: #fff;
+  height: 100%;
+  border: none;
+}
+
+
+.userid-input {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 45px;
+  border-top: 1px solid #f1f1f1;
 }

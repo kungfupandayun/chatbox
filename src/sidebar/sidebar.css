@@ -1,0 +1,64 @@
+
+.sidebar-container {
+    background-color: #4160f4;
+    padding: 0.2rem 1.2rem;
+    width: 30%;
+    height: 100%;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+  }
+  
+  .sidebar-inner-container {
+    padding: 2rem;
+  }
+  
+  .sidebar-search-field {
+    width: 100%;
+    border-radius: 25px;
+    background-color: #3752d5;
+    border: none;
+    padding: 0.5rem 1rem;
+    font-size: 0.8rem;
+    color: #fff;
+  }
+  
+  .sidebar-search-field::placeholder {
+    color: #fff;
+  }
+  
+  .sidebar-contacts {
+    padding-top: 2rem;
+  }
+  
+  .contact-card-container {
+    display: flex;
+    align-items: center;
+    padding: 0 0.3rem;
+    margin: 1rem 0;
+    color: #fff;
+    width: 100%;
+  }
+  
+  .contact-card-inner-container {
+    width: 100%;
+  }
+  
+  .contact-card-image {
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    margin-right: 0.5rem;
+  }
+  
+  .contact-card-header {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.5rem;
+  }
+  
+  .contact-card-message {
+    font-size: 0.5rem;
+    margin-top: 0.2rem;
+  }
+  
+ 

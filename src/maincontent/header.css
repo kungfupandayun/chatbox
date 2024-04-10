@@ -1,0 +1,28 @@
+
+.chat-header {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.8rem;
+    align-items: center;
+    border-bottom: 1px solid #f1f1f1;
+    font-size: small;
+}
+
+.header-text {
+    font-size: 1rem;
+    font-weight: normal;
+}
+  
+.header-button {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #e1dbdb;
+    margin: 0 0.5rem;
+    border: none;
+}
+  
+.header-button img {
+    width: 12.5px;
+    height: 12.5px;
+}
