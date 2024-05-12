@@ -2,9 +2,9 @@
 import SideBar from "./sidebar/Sidebar.js";
 import React from "react";
 import './App.css';
-import {contacts} from"./data.js";
+import {contacts,messages} from"./data.js";
 import Header from "./maincontent/Header"
-
+import Message from "./maincontent/Message"
 
 class App  extends React.Component{
 
@@ -16,13 +16,7 @@ class App  extends React.Component{
   }
 
   
-  updateMessages = (messageObject, messageSetId) => {
-    const messages={... this.messages};
-    messages[messageSetId].push(messageObject);
-    this.rootElement.innerHTML="";
-    console.log(this.messageSetId);
-    this.render();
-  }
+
 
   render = () =>{
     return(
@@ -32,10 +26,9 @@ class App  extends React.Component{
       </aside>
       <main className="main-content">
         <Header messageSetId={contacts[0].id}/>
+        <Message currentUser="177b547a-3261-11eb-adc1-0242ac120002" messageSetId={contacts[0].id}/>
       </main>
     </div>
-      
-      
     )
   } 
 }
